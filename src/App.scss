@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+body {
+  background-color: $backgroundColor;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.middle {
+  margin: 0 auto;
+  text-align: center;
+}

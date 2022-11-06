@@ -1,0 +1,16 @@
+.genButton {
+    display: block;
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    padding: .75rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+        color: #181818;
+        background-color: darkorange;
+    }
+}
