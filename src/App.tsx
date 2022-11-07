@@ -1,17 +1,32 @@
-import React from 'react';
+import { useState } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import Modal from './components/Modal/Modal';
 import Overlay from './components/Overlay/Overlay';
 
 function App() {
+
+  const [modal, setModal] = useState(false)
+
+  const handleTask = () => {
+    setModal(!modal);
+  }
+
   return (
     <>
-      <Overlay />
-      <Modal />
-    <div className="App">
-      <Header />
-    </div>
+      {modal ? (
+        (
+          <>
+            <Overlay />
+            <Modal/>
+          </>
+        )
+      ) : null
+      }
+
+      <div className="App">
+        <Header />
+      </div>
     </>
   );
 }
