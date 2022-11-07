@@ -1,9 +1,10 @@
-@import '../variables.scss';
+@import './variables.scss';
 
 body {
   background-color: $backgroundColor;
   color: #fff;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 .middle {

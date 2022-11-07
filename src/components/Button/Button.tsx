@@ -1,11 +1,25 @@
 import React from 'react';
 import classes from './Button.module.scss';
 
-const { genButton } = classes;
+const { genButton, formTypeBtn, formTypeCancelBtn } = classes;
 
-const Button = ({ title }: { title: string }) => {
+const Button = ({ title, type }: { title: string, type?: any }) => {
+
+    const determinType = (btnType: string) => {
+        switch (btnType) {
+            case 'formType':
+                return formTypeBtn;
+
+            case 'cancel':
+                return formTypeCancelBtn;
+
+            default:
+                return genButton;
+        };
+    };
+
     return (
-        <button className={genButton}>{title}</button>
+        <button className={`${genButton} ${determinType(type)}`}>{title}</button>
     );
 };
 
