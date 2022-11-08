@@ -1,9 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore, PayloadAction } from '@reduxjs/toolkit'
 // ...
 
 export const store = configureStore({
     reducer: {
-        
+        handleModal(state, action: PayloadAction<boolean>) {
+            
+        }
     }
 })
 
