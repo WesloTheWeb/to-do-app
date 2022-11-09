@@ -1,20 +1,15 @@
-import { useState } from 'react';
 import './App.scss';
+import { useAppSelector } from './app/hooks';
 import Header from './components/Header/Header';
 import Modal from './components/Modal/Modal';
 import Overlay from './components/Overlay/Overlay';
 
 function App() {
-
-  const [modal, setModal] = useState(false)
-
-  const handleTask = () => {
-    setModal(!modal);
-  }
+  const modalToggle = useAppSelector((state) => state.modal)
 
   return (
     <>
-      {modal ? (
+      {modalToggle.modal ? (
         (
           <>
             <Overlay />

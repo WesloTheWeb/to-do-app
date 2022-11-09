@@ -1,13 +1,10 @@
-import { configureStore, PayloadAction } from '@reduxjs/toolkit'
-// ...
+import { configureStore } from '@reduxjs/toolkit'
+import toggleModalReducer from './modalSlice';
+
 
 export const store = configureStore({
-    reducer: {
-        handleModal(state, action: PayloadAction<boolean>) {
-            
-        }
-    }
-})
+    reducer: {modal: toggleModalReducer} 
+});
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>
