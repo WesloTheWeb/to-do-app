@@ -11,8 +11,7 @@ const CreateTaskButton = ({ title }: { title: string}) => {
 
     const onModalClick = (e: MouseEvent, modal: boolean) => {
         e.preventDefault();
-        dispatch(setModal(modal))
-        console.log('clicked')
+        dispatch(setModal(modal));
     }
 
     return (

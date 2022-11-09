@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+
+    span {
+        display: block;
+        font-size: 1.75rem;
+    }
+
+    .options {
+        display: flex;
+
+        svg, div {
+            display: block;
+            margin: 0 1rem;
+
+            &:hover {
+                cursor: pointer;
+                color: orangered;
+            }
+        }
+    }
+}

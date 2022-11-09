@@ -33,7 +33,6 @@ const Button = ({ title, type, clickEvent }: { title: string, type?: any, clickE
             case 'modal':
                 return onModalClick;
         }
-
     }
 
     return (

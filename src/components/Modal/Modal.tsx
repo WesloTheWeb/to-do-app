@@ -11,7 +11,7 @@ const Modal = ({ }) => {
         >
             <h3>Task</h3>
             <p>To create a task fill out the information below</p>
-            <label>Title</label>
+            <label>Name of Task</label>
             <input
                 placeholder='title'
             />
@@ -21,7 +21,7 @@ const Modal = ({ }) => {
             />
             <Button
                 type='formType'
-                title="Submit"
+                title="Create Task"
             />
             <Button
                 type='cancel'
